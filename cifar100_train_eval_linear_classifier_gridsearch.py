@@ -120,12 +120,12 @@ def main():
 
             best_acc = max(best_acc, test_acc)
 
-        print(f"✅ Best Test Accuracy for LR={lr:.5f}: {best_acc:.2f}%")
+        print(f"Best Test Accuracy for LR={lr:.5f}: {best_acc:.2f}%")
         if best_acc > best_overall_acc:
             best_overall_acc = best_acc
             best_lr = lr
 
-    print(f"\n🏆 Best LR: {best_lr:.5f} → Test Accuracy: {best_overall_acc:.2f}%")
+    print(f"\n Best LR: {best_lr:.5f} → Test Accuracy: {best_overall_acc:.2f}%")
 
 if __name__ == '__main__':
     main()
